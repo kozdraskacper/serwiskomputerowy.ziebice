@@ -184,7 +184,7 @@ h1 span {
     color: #222;
 }
 
-.mobile p {
+.mobile p strong {
     color: #555;
     opacity: 1;
     font-size: 13px;
