@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --blue: #0879b9;
+    --blue-dark: #075a8b;
+    --black: #111;
+    --gray: #f2f4f6;
+    --text: #222;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Inter, Arial, sans-serif;
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.hero {
+    min-height: 650px;
+    color: white;
+    background:
+        linear-gradient(110deg, rgba(4, 35, 54, .98) 0%, rgba(7, 95, 143, .92) 58%, rgba(7, 121, 185, .72) 100%);
+}
+
+.nav {
+    width: min(1180px, 92%);
+    margin: auto;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255,.18);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: -.8px;
+}
+
+.logo span {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    font-weight: 600;
+    opacity: .8;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-links a {
+    opacity: .9;
+    transition: .2s;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+}
+
+.hero-content {
+    width: min(1180px, 92%);
+    margin: auto;
+    min-height: 564px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.eyebrow {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    opacity: .75;
+}
+
+h1 {
+    font-size: clamp(45px, 6vw, 78px);
+    line-height: .98;
+    letter-spacing: -4px;
+    margin-bottom: 25px;
+}
+
+h1 span {
+    color: #9ddaff;
+}
+
+.hero-description {
+    max-width: 580px;
+    font-size: 18px;
+    opacity: .86;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 22px;
+    border-radius: 7px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: .2s;
+}
+
+.button-primary {
+    background: white;
+    color: var(--blue-dark);
+}
+
+.button-secondary {
+    border: 1px solid rgba(255,255,255,.45);
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.hero-card {
+    width: 300px;
+    padding: 35px;
+    border: 1px solid rgba(255,255,255,.25);
+    background: rgba(0,0,0,.14);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.card-icon {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.hero-card strong {
+    display: block;
+    font-size: 21px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.hero-card p {
+    opacity: .75;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.hero-card a {
+    font-size: 18px;
+    font-weight: 800;
+    color: #9ddaff;
+}
+
+section {
+    padding: 100px 4%;
+}
+
+.section-heading {
+    width: min(1180px, 100%);
+    margin: 0 auto 50px;
+}
+
+.section-heading .eyebrow {
+    color: var(--blue);
+    opacity: 1;
+}
+
+h2 {
+    font-size: clamp(34px, 4vw, 54px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+.section-heading > p:last-child {
+    margin-top: 14px;
+    color: #666;
+}
+
+.service-grid {
+    width: min(1180px, 100%);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.service-card {
+    padding: 32px;
+    background: var(--gray);
+    min-height: 260px;
+    border-radius: 8px;
+    transition: .2s;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+}
+
+.service-number {
+    color: var(--blue);
+    font-size: 13px;
+    font-weight: 900;
+    margin-bottom: 55px;
+}
+
+.service-card h3 {
+    font-size: 19px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.diagnostics {
+    background: var(--blue);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.diagnostics .eyebrow {
+    color: #b9e5ff;
+}
+
+.diagnostics-text {
+    max-width: 520px;
+}
+
+.diagnostics-text p {
+    opacity: .9;
+    margin-bottom: 25px;
+}
+
+.button-light {
+    background: white;
+    color: var(--blue-dark);
+}
+
+.steps-grid {
+    width: min(1180px, 100%);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid #ddd;
+}
+
+.step {
+    padding: 35px 25px;
+    border-right: 1px solid #ddd;
+}
+
+.step:last-child {
+    border-right: 0;
+}
+
+.step span {
+    color: var(--blue);
+    font-weight: 900;
+    font-size: 13px;
+}
+
+.step h3 {
+    margin: 25px 0 8px;
+}
+
+.step p {
+    color: #777;
+    font-size: 14px;
+}
+
+.contact {
+    background: #101820;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.contact .eyebrow {
+    color: #9ddaff;
+}
+
+.contact-box {
+    border-left: 3px solid var(--blue);
+    padding-left: 25px;
+}
+
+.contact-box p {
+    opacity: .6;
+    margin-bottom: 4px;
+}
+
+.contact-box strong {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.contact-box a {
+    color: #9ddaff;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+footer {
+    padding: 25px 4%;
+    background: #0a0f13;
+    color: #777;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media (max-width: 850px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hero-content {
+        padding: 70px 0;
+        min-height: auto;
+        display: block;
+    }
+
+    .hero-card {
+        margin-top: 45px;
+        width: 100%;
+    }
+
+    .service-grid,
+    .steps-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .diagnostics,
+    .contact {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+    section {
+        padding: 70px 5%;
+    }
+
+    h1 {
+        letter-spacing: -2px;
+    }
+
+    .service-grid,
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .step {
+        border-right: 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .contact-box a {
+        font-size: 23px;
+    }
+}
