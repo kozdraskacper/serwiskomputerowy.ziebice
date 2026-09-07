@@ -176,6 +176,13 @@ h1 span {
     color: #9ddaff;
 }
 
+.mobile{
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,.25);
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+
 section {
     padding: 100px 4%;
 }
