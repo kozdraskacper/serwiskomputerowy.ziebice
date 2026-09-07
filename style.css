@@ -176,6 +176,22 @@ h1 span {
     color: #9ddaff;
 }
 
+.mobile {
+    margin: 20px 0;
+    padding: 14px 16px;
+    background: #fff;
+    border-radius: 8px;
+    color: #222;
+}
+
+.mobile p {
+    color: #555;
+    opacity: 1;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
 section {
     padding: 100px 4%;
 }
