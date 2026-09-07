@@ -184,12 +184,13 @@ h1 span {
     color: #222;
 }
 
-.mobile p strong {
+.mobile p {
     color: #555;
     opacity: 1;
     font-size: 13px;
     line-height: 1.6;
     margin: o;
+    font-weight: bold;
 }
 
 section {
