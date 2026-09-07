@@ -177,7 +177,7 @@ h1 span {
 }
 
 .mobile {
-    margin: 20px 0;
+    margin: 10px 0;
     padding: 14px 16px;
     background: #fff;
     border-radius: 8px;
@@ -187,9 +187,9 @@ h1 span {
 .mobile p {
     color: #555;
     opacity: 1;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.6;
-    margin: o;
+    margin: 0;
     font-weight: bold;
 }
 
